@@ -48,17 +48,31 @@ def pythagorean_triple(a, b, c):
 print(pythagorean_triple(3, 4, 5))
 print(pythagorean_triple(3, 9, 15))
 
-# Question 7 - Plotting
-import matplotlib.pyplot as plt
-list1 = [1, 6, 13, 16, 24]
-list2 = [3, 7, 17, 28, 30]
-plt.plot(list1, list2, c="blue", linewidth=1, label="A Line!", linestyle="dashed",
-         marker='s', markerfacecolor="purple", markersize=2)
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
-plt.title("Python Plot of a Line")
-plt.legend()
-plt.show()
+# # Question 7 - Plotting
+# import matplotlib.pyplot as plt
+# list1 = [1, 6, 13, 16, 24]
+# list2 = [3, 7, 17, 28, 30]
+# plt.plot(list1, list2, c="blue", linewidth=1, label="A Line!", linestyle="dashed",
+#          marker='s', markerfacecolor="purple", markersize=2)
+# plt.xlabel("X-axis")
+# plt.ylabel("Y-axis")
+# plt.title("Python Plot of a Line")
+# plt.legend()
+# plt.show()
+
+import turtle
+
+turtle.bgcolor("grey") # Background colour
+turtle.pensize(2) # pen size
+turtle.color("red")
+turtle.speed(0)
+
+for i in range(12):
+    for colours in ["red", "orange", "yellow", "green", "blue", "purple"]:
+        turtle.color(colours)
+        turtle.circle(150)
+        turtle.left(5)
+turtle.done()
 
 
 
